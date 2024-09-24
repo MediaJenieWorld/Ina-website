@@ -1,0 +1,145 @@
+.Details {
+    padding: 0;
+    --big-container-p-x: 255px;
+    font-size: 16px;
+
+    .padding-1 {
+        padding: 3rem var(--big-container-p-x);
+        // padding-right: calc(var(--big-container-p-x) / 2);
+        // padding-right: calc(var(--big-container-p-x) / 2);
+    }
+
+    .light-color {
+        color: #9747FF;
+    }
+
+    .dark-color {
+        color: #4C02A9;
+    }
+
+    .flex-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+    }
+
+    .bt {
+        padding-top: 100px;
+        margin-top: 50px;
+        border-top: 1px solid #B3AFAF;
+    }
+
+
+    .Big-container {
+        margin: 100px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left {
+            position: relative;
+
+            img {
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                z-index: 2;
+                width: 100%;
+            }
+
+            .heading {
+                margin-top: calc(100px + 8rem);
+                margin-left: 133px;
+                position: relative;
+                z-index: 3;
+                height: max-content;
+                padding-bottom: 30px;
+                width: min-content;
+                color: #fff;
+                border-bottom: 2px dashed #FFDD2C;
+            }
+        }
+
+        .right {
+            margin: 100px 0;
+            min-height: calc(100vh - 160px);
+
+            .card {
+                background-color: #fff;
+                position: relative;
+                height: 100%;
+                z-index: 4;
+                padding: 8rem 6rem;
+                display: flex;
+                align-items: center;
+                transform: translateX(-100px);
+            }
+        }
+
+    }
+
+    .feature-points {
+        margin: 100px 255px;
+        padding: 0px 70px;
+        border-left: 4px dashed #9747FF;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .collab {
+        background-color: #501D92;
+        margin: 3rem 0px;
+        height: 600px;
+
+        .card {
+            margin: 0 255px;
+            padding: 80px 60px;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            gap: 24px;
+        }
+    }
+
+    .upcoming {
+        margin: 100px 255px;
+        display: flex;
+        gap: 60px;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+        button {
+            color: #fff;
+            width: max-content;
+            font-weight: 400;
+            font-size: 28px;
+
+            a {
+                font-size: 28px;
+
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+    }
+
+}
