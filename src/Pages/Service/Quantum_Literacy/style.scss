@@ -1,0 +1,354 @@
+.Quantum_Literacy {
+    padding: 0;
+    --big-container-p-x: 255px;
+    font-size: 16px;
+
+    .cover-page {
+        h1 {
+            padding-left: var(--big-container-p-x);
+        }
+
+    }
+
+    .nav-path {
+        padding-top: 53px;
+    }
+
+    .light-color {
+        color: #9747FF;
+    }
+
+    .dark-color {
+        color: #4C02A9;
+    }
+
+    .m-l {
+        margin-left: 255px;
+    }
+
+    .m-r {
+        margin-right: 141px;
+    }
+
+    .m-t {
+        margin-top: 50px;
+    }
+
+    .m-b {
+        margin-bottom: 128px;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--main-p-x) * 1.5);
+        align-items: flex-start;
+
+        pre {
+            color: #000000;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    .knowBtn {
+        padding: 10px 30px;
+        background-color: var(--theme-color);
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        font-family: inherit;
+        font-weight: 700;
+        transition: background-color 0.3s ease-in-out;
+        white-space: nowrap;
+
+        a {
+            color: black;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.3s ease-in-out;
+        }
+
+        &.purple {
+            background-color: var(--theme-color);
+            color: var(--know-btn-text-color);
+
+            a {
+                color: var(--know-btn-text-color);
+            }
+        }
+
+        &:hover {
+            background-color: #000000;
+            color: var(--know-btn-text-hover-color);
+
+            a {
+                color: var(--know-btn-text-hover-color);
+            }
+        }
+
+        &:has(a) {
+            padding: 0;
+
+            a {
+                display: block;
+                padding: 10px 30px;
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid #B3AFAF;
+    }
+
+    .hero-image {
+        img {
+            height: auto;
+            max-height: 600px;
+        }
+    }
+
+    .feature-points {
+        margin-top: 107px;
+        margin-bottom: 107px;
+        display: flex;
+        flex-direction: column;
+        gap: 107px;
+
+        .card {
+            .text-48 {
+                margin-bottom: 56px;
+            }
+
+            .description {
+                padding-left: 77px;
+                border-left: 4px dashed #9747FF;
+                display: flex;
+                flex-direction: column;
+                gap: 42px;
+            }
+        }
+    }
+
+    .text-box {
+        margin-top: 86px;
+        margin-bottom: 48px;
+    }
+
+    .imageCards {
+        margin-bottom: 100px;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: var(--col-gap);
+            justify-content: space-between;
+            position: relative;
+            min-height: max(40vh, 500px);
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                // transition: scale .3s ease-in-out;
+            }
+
+            .text-60 {
+                margin-bottom: 30px;
+            }
+
+            pre {
+                line-height: 32px;
+            }
+
+            .text-container {
+                position: relative;
+                z-index: 4;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                gap: var(--col-gap);
+                padding: 3rem 1rem;
+                transition: background-color .3s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 50px;
+                padding-left: 40px;
+
+                button {
+
+                    // margin-top: 1rem;
+                    font-size: 1.1em;
+
+                    a {
+                        font-size: 1.1em;
+                    }
+
+                    transition: background-color .3s ease-in-out;
+                    width: max-content;
+                }
+            }
+
+            &:hover {
+                .text-container {
+                    background-color: #4d02a9d8;
+
+                    button {
+                        background-color: #FFFFFF !important;
+                        color: #000 !important;
+
+                        a {
+                            background-color: #FFFFFF !important;
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .video-section {
+        background-color: #4C02A9;
+        color: #fff;
+        padding-top: 77px;
+        padding-bottom: 60px;
+
+        h3 {
+            margin-bottom: 87px;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .Quantum_Literacy {
+        font-size: 14px;
+        --m-l: 170px;
+        --m-r: 70px;
+
+        .cover-page h1 {
+            padding-left: var(--m-l);
+        }
+
+        .m-l {
+            margin-left: 170px;
+        }
+
+        .m-r {
+            margin-right: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .Quantum_Literacy {
+        font-size: 12px;
+        --m-l: 120px;
+        --m-r: 50px;
+
+        .m-l {
+            margin-left: 120px;
+        }
+
+        .m-r {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .Quantum_Literacy {
+        font-size: 11px;
+        --m-l: 90px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 90px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .imageCards {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Quantum_Literacy {
+        font-size: 10px;
+        --m-l: 40px;
+        --m-r: 40px;
+
+        .m-l {
+            margin-left: 40px;
+        }
+
+        .m-r {
+            margin-right: 40px;
+        }
+
+        .section-2 {
+            margin-bottom: 60px;
+        }
+
+        .feature-points {
+            margin-bottom: 60px;
+            margin-top: 60px;
+            gap: 50px;
+
+            .card {
+                .text-48 {
+                    margin-bottom: 30px;
+                }
+
+                .description {
+                    padding: 0 40px;
+                    gap: 24px;
+                }
+            }
+        }
+
+        .text-box {
+            margin-top: 60px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Quantum_Literacy {
+        font-size: 8px;
+        --m-l: 20px;
+        --m-r: 20px;
+
+        .m-l {
+            margin-left: 20px;
+        }
+
+        .m-r {
+            margin-right: 20px;
+        }
+    }
+}

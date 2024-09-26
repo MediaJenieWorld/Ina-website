@@ -10,12 +10,12 @@ const Service_Page = () => {
             <div className="cover-page">
                 <CoverPageImage src={"/assets/Ina/card (3).webp"} />
             </div>
-            <div className="padding-1  text-28">
+            <div className="m-l m-r nav-path text-28">
                 <a style={{ color: "#090909", marginRight: ".25rem" }} href="#">  Services & Capabilities</a>   {">"}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Capability</a>
             </div>
-            <div className="padding-1 ">
-                <h1 className='text-72 text-600'>
+            <div className=" section-1 m-l m-r">
+                <h1 className='text-60 text-600'>
                     Unlock the boundless potential of quantum technology with INA Solutions’ comprehensive Quantum Capability offerings.
                 </h1>
             </div>

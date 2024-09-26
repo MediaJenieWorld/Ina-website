@@ -1,9 +1,31 @@
 .Service {
     padding: 0;
-    --big-container-p-x: 8rem;
+    --big-container-p-x: 255px;
 
-    .padding-1 {
-        padding: 3rem 8rem;
+    .m-l {
+        margin-left: 255px;
+    }
+
+    .nav-path {
+        padding-top: 53px;
+    }
+
+    .m-r {
+        margin-right: 126px;
+    }
+
+    .cover-page {
+        h1 {
+            padding-left: var(--big-container-p-x);
+        }
+
+    }
+
+    .section-1 {
+        margin-left: 255px;
+        margin-right: 178px;
+        margin-top: 84px;
+        margin-bottom: 100px;
     }
 
     .big-sections {
@@ -12,7 +34,6 @@
         gap: 3rem;
         margin-bottom: 200px;
         padding-top: 100px;
-        margin-top: 50px;
         border-top: 1px solid #B3AFAF;
     }
 
@@ -96,6 +117,161 @@
                     // }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .Service {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .Service {
+        // font-size: 10px;
+        --m-l: 170px;
+        --m-r: 70px;
+
+        .cover-page h1 {
+            padding-left: var(--m-l);
+        }
+
+        .m-l {
+            margin-left: 170px;
+        }
+
+        .m-r {
+            margin-right: 70px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .Service {
+        --m-l: 120px;
+        --m-r: 50px;
+
+        .m-l {
+            margin-left: 120px;
+        }
+
+        .m-r {
+            margin-right: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .Service {
+        --m-l: 60px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 60px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .Big-container {
+            margin: 2rem 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Service {
+        font-size: 8px;
+        --m-l: 60px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 60px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .section-1 {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .big-sections {
+            padding-top: 50px;
+            gap: 0px;
+        }
+
+        .Big-container {
+            margin: 2rem 30px;
+            display: block;
+
+
+            .left img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+
+            .right {
+                padding-top: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
+
+                .card {
+
+                    .all {
+                        box-shadow: none;
+                    }
+
+                    .text-wrapper {
+                        padding: 0;
+
+                        .text-60 {
+                            margin-top: 40px;
+                        }
+
+                        ul {
+                            padding-left: 20px;
+                            margin-top: 20px;
+                        }
+
+                        button {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Service {
+        font-size: 8px;
+        --m-l: 30px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 30px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .section-1 {
+            margin-top: 40px;
+            margin-bottom: 50px;
         }
     }
 }

@@ -113,12 +113,17 @@ Advanced Data Anaytics`
             <div className="text-container">
                 {/* <p className="text-24 text-600">{card.title}</p> */}
                 <p></p>
-                <div className="bottom">
-                    <p className="text-48 text-600">{card.title}</p>
-                    <p className="text-28 ">
+                <div className="top">
+                    <p className="text-60 text-700">{card.title}</p>
+                    <pre className="text-32 text-500 pre ">
                         {card.text}
-                    </p>
-                    <KnowMoreBtn style={{ background: "var(--theme-color)", borderRadius: "6px", color: "#fff" }} link={"/about"} />
+                    </pre>
+                </div>
+                <div className="bottom">
+                    <KnowMoreBtn btnClass='text-24 text-700' style={{
+                        background: "var(--theme-color)",
+                        borderRadius: "6px", color: "#fff"
+                    }} link={"/about"} />
                 </div>
             </div>
         </div>)}

@@ -53,7 +53,6 @@
                 gap: .75rem;
 
                 a {
-                    font-size: 16px;
                     color: #000;
                     text-decoration: none;
                     font-weight: 500;
@@ -76,7 +75,7 @@
         .menu-toggle {
             border-radius: 50%;
             height: 40px;
-            width: 40px;
+            width: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,7 +95,7 @@
                 // transform-box: content-box;
                 position: absolute;
                 content: "";
-                height: 3px;
+                height: 4px;
                 width: 70%;
                 background-color: var(--bg-color);
                 left: 50%;
@@ -105,7 +104,7 @@
             }
 
             &::after {
-                top: 25px;
+                top: 30px;
             }
 
             &:hover {
@@ -228,11 +227,30 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .header {
-        --header-h: 70px
-    }
 
+@media screen and (max-width: 1440px) {
+    .header {
+        img {
+            height: 40px;
+        }
+
+        .right {
+
+            svg {
+                height: 30px;
+                width: 30px;
+            }
+
+            .menu-toggle {
+                width: 40px;
+
+                &::before,
+                &::after {
+                    height: 3px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:968px) {
@@ -240,6 +258,7 @@
         .top .right .lg-link-item {
             display: none;
         }
+
     }
 
 }
