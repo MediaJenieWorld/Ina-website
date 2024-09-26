@@ -80,7 +80,6 @@
         font-size: 16px;
         border: none;
         font-family: inherit;
-        font-weight: 700;
         transition: background-color 0.3s ease-in-out;
         white-space: nowrap;
 
@@ -166,6 +165,25 @@
             gap: 3rem;
             align-items: center;
             padding: 30px 0;
+
+            &::-webkit-scrollbar {
+                width: 12px;
+                height: 12px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #ffffff00;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #ffffff00;
+                border-radius: 6px;
+                /* Rounded corners for the thumb */
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #ffffff00;
+            }
         }
 
         img {
@@ -178,6 +196,25 @@
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #ffffff00;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #ffffff00;
+            border-radius: 6px;
+            /* Rounded corners for the thumb */
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #ffffff00;
+        }
 
         .card {
             font-size: 10px;
@@ -257,6 +294,7 @@
         align-items: center;
         justify-content: flex-end;
         position: relative;
+        overflow: hidden;
 
         .left {
             position: absolute;
@@ -452,6 +490,10 @@
             margin-right: 37px;
         }
 
+        .knowBtn {
+            font-size: 12px;
+        }
+
         .section-2,
         .section-3 {
             margin-left: 70px;
@@ -482,6 +524,25 @@
     .Landing_Page {
         font-size: 10px;
 
+        .hero-section {
+            font-size: 6px;
+
+            .overlay .flex {
+                a.link {
+                    font-size: 14px;
+
+                }
+
+                button.service {
+                    font-size: 14px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
         .section.centered {
             margin-left: 20px;
             margin-right: 20px;
@@ -492,6 +553,15 @@
             margin-left: 20px;
             margin-right: 20px;
             padding: 0 0;
+        }
+
+        .cards-section {
+
+            .card {
+                width: 270px;
+                font-size: 8px;
+                min-width: 270px;
+            }
         }
 
         .section-2 {

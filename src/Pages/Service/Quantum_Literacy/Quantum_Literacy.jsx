@@ -20,7 +20,6 @@ const Quantum_Literacy_Page = () => {
                 <h4 className="text-32 text-400">
                     INA Solutions is committed to empowering businesses with emerging technologies. Our mission is to optimize processes, uncover insights, and drive growth through innovative solutions, expert knowledge, and exceptional service.
                 </h4>
-                <KnowMoreBtn link={"/services"} btnClass="purple" label="View Services" />
             </div>
             <div className="hero-image">
                 <ImageComp height={600} width={"100%"} src={"/Service/image.png"} />
@@ -85,7 +84,7 @@ const ImageCardSection = () => {
                     </pre>
                 </div>
                 <div className="bottom">
-                    <KnowMoreBtn label='Download' btnClass='text-24 text-700'
+                    <KnowMoreBtn label='Download' btnClass='text-24 text-500'
                         style={{
                             background: "var(--theme-color)",
                             borderRadius: "6px", color: "#fff"

@@ -16,8 +16,8 @@ const Ina_Landing_Page = () => {
                         Helping organizations to unlock infinite potential through technology solutions.
                     </h2>
                     <div className="flex">
-                        <button className='service '>View Services</button>
-                        <a className='link'>More About Us</a>
+                        <button className='service text-400 '>View Services</button>
+                        <a className='link text-400 '>More About Us</a>
                     </div>
 
                 </div>
@@ -38,7 +38,7 @@ const Ina_Landing_Page = () => {
                 <h4 className="text-32 text-400">
                     INA Solutions is committed to empowering businesses with emerging technologies. Our mission is to optimize processes, uncover insights, and drive growth through innovative solutions, expert knowledge, and exceptional service.
                 </h4>
-                <KnowMoreBtn link={"/services"} btnClass="purple" label="View Services" />
+                <KnowMoreBtn link={"/services"} btnClass="purple text-400" label="View Services" />
             </div>
             <div className="section-3">
                 <h2 className="text-60 text-600" style={{ color: "var(--theme-color)" }}>  Partnerships & Collaborations     </h2>

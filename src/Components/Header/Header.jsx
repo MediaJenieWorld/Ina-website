@@ -21,8 +21,16 @@ const menuItems = [
         href: "/services/details",
       },
       {
+        label: "AI-ML",
+        href: "/services/ai-ml",
+      },
+      {
         label: "Quantum Literacy",
         href: "/services/quantum_literacy",
+      },
+      {
+        label: "Quantum Machine Learning",
+        href: "/services/quantum_machine_learning",
       }
     ]
   },

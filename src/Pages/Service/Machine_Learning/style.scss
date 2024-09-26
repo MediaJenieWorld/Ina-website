@@ -1,0 +1,322 @@
+.Machine_Learning_Page {
+    padding: 0;
+    --big-container-p-x: 255px;
+    font-size: 16px;
+
+    .cover-page {
+        h1 {
+            padding-left: var(--big-container-p-x);
+        }
+
+    }
+
+    .nav-path {
+        padding-top: 53px;
+    }
+
+    .light-color {
+        color: #9747FF;
+    }
+
+    .dark-color {
+        color: #4C02A9;
+    }
+
+    .m-l {
+        margin-left: 255px;
+    }
+
+    .m-r {
+        margin-right: 141px;
+    }
+
+    .m-t {
+        margin-top: 50px;
+    }
+
+    .m-b {
+        margin-bottom: 128px;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--main-p-x) * 1.5);
+        align-items: flex-start;
+
+        pre {
+            color: #000000;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    .hero-image {
+        img {
+            height: auto;
+            max-height: 600px;
+        }
+    }
+
+    .feature-points {
+        margin-top: 107px;
+        margin-bottom: 107px;
+        border-left: 4px dashed #9747FF;
+        padding-left: 77px;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+        }
+    }
+
+    .Big-container {
+        // padding: calc(var(--main-p-x) * 4) var(--big-container-p-x);
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        position: relative;
+        margin: 2rem 4rem;
+
+        img {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 80%
+        }
+
+        .right {
+            height: 100%;
+            min-width: 300px;
+            max-width: 576px;
+            padding: 150px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                position: relative;
+                height: 80%;
+                gap: var(--col-gap);
+                color: black;
+
+                .all {
+                    box-shadow: 7px 0px 5px 0px #9E9E9E;
+                    background-color: #fff;
+                }
+
+                .text-wrapper {
+                    padding: 4em;
+                    height: max-content;
+                    background-color: #fff;
+
+                    p {
+                        margin-top: 2em;
+                    }
+
+                    .des {
+                        color: #4C02A9;
+                    }
+
+                    ul {
+                        margin-top: 2rem;
+                        padding-left: 3rem;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    margin-top: var(--col-gap);
+                    border-radius: 0px;
+                    background-color: #4C02A9;
+
+                    a {
+                        color: #fff;
+                        border-top: 1px solid transparent;
+                    }
+
+                    &:hover {
+                        background: #fff;
+
+                        a {
+                            border-top: 1px solid #030303;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:1441px) {
+    .Machine_Learning_Page {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Machine_Learning_Page {
+        font-size: 14px;
+        --m-l: 170px;
+        --m-r: 70px;
+
+        .cover-page h1 {
+            padding-left: var(--m-l);
+        }
+
+        .m-l {
+            margin-left: 170px;
+        }
+
+        .m-r {
+            margin-right: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .Machine_Learning_Page {
+        font-size: 12px;
+        --m-l: 120px;
+        --m-r: 50px;
+
+        .m-l {
+            margin-left: 120px;
+        }
+
+        .m-r {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .Machine_Learning_Page {
+        font-size: 11px;
+        --m-l: 90px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 90px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .Big-container {
+            margin: 2rem 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Machine_Learning_Page {
+        font-size: 10px;
+        --m-l: 40px;
+        --m-r: 40px;
+
+        .m-l {
+            margin-left: 40px;
+        }
+
+        .m-r {
+            margin-right: 40px;
+        }
+
+        .section-2 {
+            margin-bottom: 60px;
+        }
+
+        .feature-points {
+            margin-bottom: 60px;
+            margin-top: 60px;
+            padding-left: 40px;
+
+            .description {
+                gap: 24px;
+            }
+        }
+
+        .text-box {
+            margin-top: 60px;
+        }
+
+        .Big-container {
+            margin: 2rem 30px;
+            display: block;
+
+
+            .left img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+
+            .right {
+                padding-top: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
+
+                min-width: unset;
+
+                .card {
+
+                    .all {
+                        box-shadow: none;
+                    }
+
+                    .text-wrapper {
+                        padding: 0;
+
+                        .text-60 {
+                            margin-top: 40px;
+                        }
+
+                        ul {
+                            padding-left: 20px;
+                            margin-top: 20px;
+                        }
+
+                        button {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Machine_Learning_Page {
+        font-size: 8px;
+        --m-l: 20px;
+        --m-r: 20px;
+
+        .m-l {
+            margin-left: 20px;
+        }
+
+        .m-r {
+            margin-right: 20px;
+        }
+    }
+}
