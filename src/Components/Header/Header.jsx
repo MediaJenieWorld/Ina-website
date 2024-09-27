@@ -21,16 +21,25 @@ const menuItems = [
         href: "/services/details",
       },
       {
-        label: "AI-ML",
-        href: "/services/ai-ml",
-      },
-      {
         label: "Quantum Literacy",
         href: "/services/quantum_literacy",
       },
       {
+        label: "AI-ML",
+        href: "/services/ai-ml",
+      },
+      {
         label: "Quantum Machine Learning",
         href: "/services/quantum_machine_learning",
+      },
+      {
+        label: "Adanced Data Analytics",
+        href: "/services/adanced-data-analytics",
+      }
+      ,
+      {
+        label: "Knowledge Graph",
+        href: "/services/knowledge_graph",
       }
     ]
   },

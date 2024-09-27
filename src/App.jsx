@@ -12,6 +12,8 @@ const Service_Details_Page = lazy(() => import("./Pages/Service/Details/Details"
 const Quantum_Literacy_Page = lazy(() => import("./Pages/Service/Quantum_Literacy/Quantum_Literacy"));
 const Machine_Learning_Page = lazy(() => import("./Pages/Service/Machine_Learning/Machine_Learning"));
 const AI_ML_Page = lazy(() => import("./Pages/Service/AI-ML/AI_ML"));
+const Data_Analytics_Page = lazy(() => import("./Pages/Service/Data_Analytics/Data_Analytics"));
+const Knowledge_Graph_Page = lazy(() => import("./Pages/Service/Knowledge_Graph/Knowledge_Graph"));
 
 
 const App = () => {
@@ -26,7 +28,10 @@ const App = () => {
           <Route path="/services/details" element={<Service_Details_Page />} />
           <Route path="/services/quantum_literacy" element={<Quantum_Literacy_Page />} />
           <Route path="/services/quantum_machine_learning" element={<Machine_Learning_Page />} />
+          <Route path="/services/adanced-data-analytics" element={<Data_Analytics_Page />} />
           <Route path="/services/ai-ml" element={<AI_ML_Page />} />
+          <Route path="/services/knowledge_graph" element={<Knowledge_Graph_Page />} />
+
 
           <Route path="/card" element={<CardsPage />} />
           <Route path="*" element={<Ina_Landing_Page />} />
