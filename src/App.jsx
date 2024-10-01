@@ -25,7 +25,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Ina_Landing_Page />} />
           <Route path="/services" element={<Service_Page />} />
-          <Route path="/services/details" element={<Service_Details_Page />} />
+          <Route path="/services/quantum_sensing" element={<Service_Details_Page />} />
           <Route path="/services/quantum_literacy" element={<Quantum_Literacy_Page />} />
           <Route path="/services/quantum_machine_learning" element={<Machine_Learning_Page />} />
           <Route path="/services/adanced-data-analytics" element={<Data_Analytics_Page />} />

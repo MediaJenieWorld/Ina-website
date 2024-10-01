@@ -46,7 +46,7 @@ const Quantum_Literacy_Page = () => {
                 <YouTubeEmbed />
                 <p className='m-l m-r m-t text-28 text-500'>Watch INA's own Suresh Nair along with Timothy Akres and fellow authors from the National Quantum Literacy Network engage in a vital discussion on bringing quantum science to the mainstream. Explore its pivotal role in our future and the need to make it accessible beyond academia.</p>
             </div>
-            <div className="m-t m-b"></div>
+            <div style={{ height: "100px" }} className="m-t m-b"></div>
         </div>
     )
 }
@@ -58,7 +58,8 @@ const ImageCardSection = () => {
         {
             img: "/Ina/card (6).webp",
             title: "White Paper",
-            text: `Quantum Readiness in Healthcare and Public Health: `
+            text: `Quantum Readiness in Healthcare and Public Health: `,
+            buttonLabel: "Download"
         },
         {
             img: "/Ina/card (7).webp",
@@ -84,11 +85,13 @@ const ImageCardSection = () => {
                     </pre>
                 </div>
                 <div className="bottom">
-                    <KnowMoreBtn label='Download' btnClass='text-24 text-500'
-                        style={{
-                            background: "var(--theme-color)",
-                            borderRadius: "6px", color: "#fff"
-                        }} link={"/#"} />
+                    {card?.buttonLabel &&
+                        <KnowMoreBtn label='Download' btnClass='text-24 text-500'
+                            style={{
+                                background: "var(--theme-color)",
+                                borderRadius: "6px", color: "#fff"
+                            }} link={"/#"} />
+                    }
                 </div>
             </div>
         </div>)}

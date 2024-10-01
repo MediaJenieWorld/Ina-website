@@ -10,7 +10,7 @@ const Service_Page = () => {
             <div className="cover-page">
                 <CoverPageImage src={"/assets/Ina/card (3).webp"} />
             </div>
-            <div className="m-l m-r nav-path text-28">
+            <div className="m-l m-r nav-path text-24 text-400">
                 <a style={{ color: "#090909", marginRight: ".25rem" }} href="#">  Services & Capabilities</a>   {">"}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Capability</a>
             </div>
@@ -44,7 +44,7 @@ const Service_Page = () => {
                                         <li>Cultivating a diverse and inclusive learning environment through community events and workshops.</li>
                                         <li>Fostering dialogue and knowledge sharing through industry-specific white papers and conferences.</li>
                                     </ul>
-                                    <KnowMoreBtn label='Read More' link={"/about"} />
+                                    <KnowMoreBtn btnClass='btn-shadow text-32' label='Read More' link={"/about"} />
 
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const Service_Page = () => {
                                         <li>Collaboration with universities and research institutions to stay at the forefront of the industry.</li>
                                         <li>Tailored solutions to meet your unique needs and objectives.</li>
                                     </ul>
-                                    <KnowMoreBtn label='Read More' link={"/about"} />
+                                    <KnowMoreBtn btnClass='btn-shadow text-32' label='Read More' link={"/about"} />
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const Service_Page = () => {
                                         </li>
                                         <li>Collaborative efforts with academic bodies and research laboratories to drive innovation and scientific advancement.                                        </li>
                                     </ul>
-                                    <KnowMoreBtn label='Read More' link={"/about"} />
+                                    <KnowMoreBtn btnClass='btn-shadow text-32' label='Read More' link={"/about"} />
                                 </div>
                             </div>
                         </div>

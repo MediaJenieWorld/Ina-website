@@ -9,7 +9,7 @@ const Service_Details_Page = () => {
     return (
         <div className='Details'>
             <CoverPageImage label='Quantum Sensing' src={"/assets/Ina/card (3).webp"} />
-            <div className=" m-l m-r   nav-path text-28">
+            <div className=" m-l m-r   nav-path text-24">
                 <a style={{ color: "#090909", marginRight: ".25rem" }} href="#">  Services & Capabilities</a>{" > "}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Capability</a>{" > "}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Sensing</a>
@@ -71,7 +71,7 @@ const Service_Details_Page = () => {
                 <h3 style={{ margin: "20px 0" }}
                     className=' dark-color text-48 text-600'>
                     The Role of AI and Machine Learning</h3>
-                <p className='text-28'>The integration of QML and AI with quantum sensing systems enhances their potential, enabling:
+                <p className='text-28'>The integration of QML and AI with quantum sensing <br /> systems enhances their potential, enabling:
                 </p>
             </div>
             <div className="m-l m-r feature-points">
@@ -87,14 +87,13 @@ const Service_Details_Page = () => {
                     <h3 className='text-42 text-800'> QML optimization </h3>
                     <p className='text-28'> Enhanced sensitivity and precision of quantum sensors through advanced algorithms. </p>
                 </div>
-
                 <div className="point">
-                    <h3 className='text-42 text-800'> Healthcare </h3>
-                    <p className='text-28'>Pioneering early detection, personalized treatments, and innovative diagnostic tools.
+                    <p className='text-28 text-800'>This convergence promises to transform industries, including:
                     </p>
                 </div>
                 <div className="point">
-                    <p className='text-28 text-800'>This convergence promises to transform industries, including:
+                    <h3 className='text-42 text-800'> Healthcare </h3>
+                    <p className='text-28'>Pioneering early detection, personalized treatments, and innovative diagnostic tools.
                     </p>
                 </div>
                 <div className="point">
@@ -124,7 +123,7 @@ const Service_Details_Page = () => {
                 </div>
             </div>
             <div className="upcoming">
-                <ImageComp src="/Ina/sofa.png" height={"587px"} width={"364px"} />
+                <ImageComp src="/Ina/sofa.png" />
                 <div className="right">
                     <div className="top">
                         <h3 className='text-48 text-600'>
@@ -137,7 +136,7 @@ const Service_Details_Page = () => {
                             Join us on this exhilarating journey to unlock the full potential of quantum sensing and its transformative effect on our world.
                         </p>
                     </div>
-                    <KnowMoreBtn label='Download White Paper' />
+                    <KnowMoreBtn btnClass='btn-shadow' label='Download White Paper' />
                 </div>
             </div>
 

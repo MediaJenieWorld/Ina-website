@@ -50,13 +50,12 @@
             .lg-link-item {
                 display: flex;
                 align-items: center;
-                gap: .75rem;
+                // gap: .75rem;
 
                 a {
                     color: #000;
                     text-decoration: none;
-                    font-weight: 500;
-                    padding: 0 .6rem;
+                    padding: 0 .75rem;
                     border-right: 1px solid var(--header-link-color);
 
                     &:last-child {
@@ -66,14 +65,13 @@
 
                     &:hover {
                         text-decoration: underline;
-
                     }
                 }
             }
         }
 
         .menu-toggle {
-            border-radius: 50%;
+            // border-radius: 50%;
             height: 40px;
             width: 60px;
             display: flex;
@@ -87,6 +85,25 @@
             position: relative;
             --bg-color: var(--menuBtn);
 
+            .line {
+                height: 40px;
+                width: 60px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 30px;
+                    height: 4px;
+                    left: 50%;
+                    width: 30%;
+                    background-color: var(--bg-color);
+                    border-radius: 4px;
+                    transition: all .2s ease-in;
+                    transform: translate(25%, -50%);
+                    transform-origin: center center;
+                }
+            }
+
             &:before,
             &::after {
                 border-radius: 4px;
@@ -99,12 +116,12 @@
                 width: 70%;
                 background-color: var(--bg-color);
                 left: 50%;
-                top: 15px;
+                top: 10px;
                 transform: translate(-50%, -50%)
             }
 
             &::after {
-                top: 30px;
+                top: 20px;
             }
 
             &:hover {
@@ -116,6 +133,11 @@
                 &::before {
                     top: 50%;
                     animation: rotateRight .2s .2s forwards;
+                }
+
+                .line::before {
+                    top: 50%;
+                    opacity: 0;
                 }
 
                 &::after {
@@ -228,6 +250,24 @@
 }
 
 
+@media screen and (min-width: 1441px) {
+    .header {
+        .top .right {
+            gap: 0;
+
+            .search_icon {
+                margin-left: 70px;
+                margin-right: 60px;
+            }
+
+            .menu-toggle {
+                margin-right: 32px;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 1440px) {
     .header {
         img {
@@ -244,6 +284,7 @@
             .menu-toggle {
                 width: 40px;
 
+                .line::before,
                 &::before,
                 &::after {
                     height: 3px;

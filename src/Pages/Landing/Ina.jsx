@@ -13,7 +13,7 @@ const Ina_Landing_Page = () => {
                     src="/assets/Ina/hero.png" alt="Banner" />
                 <div className="overlay">
                     <h2 className='text-60 text-600'>
-                        Helping organizations to unlock infinite potential through technology solutions.
+                        Helping organizations <br /> to unlock infinite potential through technology solutions.
                     </h2>
                     <div className="flex">
                         <button className='service text-400 '>View Services</button>
@@ -33,15 +33,15 @@ const Ina_Landing_Page = () => {
             </div>
             <div className="section-2">
                 <h2 className="text-60 text-600">
-                    Ina Solutions delivers transformative technology solutions to organizations.
+                    Ina Solutions delivers transformative <br /> technology solutions to organizations.
                 </h2>
-                <h4 className="text-32 text-400">
+                <h4 className="text-28 text-400">
                     INA Solutions is committed to empowering businesses with emerging technologies. Our mission is to optimize processes, uncover insights, and drive growth through innovative solutions, expert knowledge, and exceptional service.
                 </h4>
                 <KnowMoreBtn link={"/services"} btnClass="purple text-400" label="View Services" />
             </div>
             <div className="section-3">
-                <h2 className="text-60 text-600" style={{ color: "var(--theme-color)" }}>  Partnerships & Collaborations     </h2>
+                <h2 className="text-48 text-600" style={{ color: "var(--theme-color)" }}>  Partnerships & Collaborations     </h2>
                 <div className="flex">
                     {brands().map((brand, i) => <ImageComp key={i} height={"60"} width={"auto"} src={brand} />)}
                 </div>
@@ -121,8 +121,9 @@ Advanced Data Anaytics`
                 </div>
                 <div className="bottom">
                     <KnowMoreBtn btnClass='text-24 text-700' style={{
-                        background: "var(--theme-color)",
-                        borderRadius: "6px", color: "#fff"
+                        background: "#C99FFF",
+                        color: "#000",
+                        borderRadius: "6px",
                     }} link={"/about"} />
                 </div>
             </div>
