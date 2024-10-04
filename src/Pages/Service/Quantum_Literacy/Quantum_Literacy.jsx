@@ -40,7 +40,7 @@ const Quantum_Literacy_Page = () => {
             </div>
             <div className="video-section">
                 <h3 className='m-l m-r m-t text-42 text-500'>
-                    From Academia to Main Street:
+                    From Academia to Main Street: <br />
                     Quantum Science's Journey into Public Discourse
                 </h3>
                 <YouTubeEmbed />

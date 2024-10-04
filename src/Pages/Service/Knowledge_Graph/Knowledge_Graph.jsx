@@ -13,16 +13,18 @@ const Knowledge_Graph_Page = () => {
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Knowledge Graph</a>
             </div>
             <div className="m-l m-r m-t m-b section-2">
-                <h2 className="text-48 text-600">
+                <h2 className="text-42 text-600">
                     Our Team specializes in building knowledge graph solutions that can help you extract valuable insights from complex data.
                 </h2>
             </div>
             <div className="hero-image">
                 <ImageComp height={600} width={"100%"} src={"/Service/image.png"} />
-                <div className="m-l m-r  overlay-text">
-                    <h4 className="text-36 text-500">
-                        Our solutions integrate data from multiple sources, including structured and unstructured data, and use advanced algorithms and tools such as Neo4j, Stardog, and Amazon Neptune to build highly scalable and efficient knowledge graphs.
-                    </h4>
+                <div className="img-blue-layer">
+                    <div className="m-l m-r  overlay-text">
+                        <h4 className="text-36 text-500">
+                            Our solutions integrate data from multiple sources, including structured and unstructured data, and use advanced algorithms and tools such as Neo4j, Stardog, and Amazon Neptune to build highly scalable and efficient knowledge graphs.
+                        </h4>
+                    </div>
                 </div>
             </div>
 

@@ -22,10 +22,12 @@ const AI_ML_Page = () => {
             </div>
             <div className="hero-image">
                 <ImageComp height={600} width={"100%"} src={"/Service/image.png"} />
-                <div className="m-l m-r  overlay-text">
-                    <h4 className="text-36 text-500">
-                        Our AI and ML solutions are designed to improve efficiency, reduce costs, and drive growth. We have successfully delivered numerous projects for key industry leaders and achieved a 100% customer satisfaction rate. Contact us to learn how our advanced AI and ML solutions can transform your business.
-                    </h4>
+                <div className="img-blue-layer">
+                    <div className="m-l m-r  overlay-text">
+                        <h4 className="text-36 text-500">
+                            Our AI and ML solutions are designed to improve efficiency, reduce costs, and drive growth. We have successfully delivered numerous projects for key industry leaders and achieved a 100% customer satisfaction rate. Contact us to learn how our advanced AI and ML solutions can transform your business.
+                        </h4>
+                    </div>
                 </div>
             </div>
             <CardsSection />

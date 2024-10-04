@@ -1,6 +1,6 @@
 .Knowledge_Graph_Page {
     padding: 0;
-    --big-container-p-x: 255px;
+    --big-container-p-x: 225px;
     font-size: 16px;
 
     .cover-page {
@@ -23,7 +23,7 @@
     }
 
     .m-l {
-        margin-left: 255px;
+        margin-left: 225px;
     }
 
     .m-r {
@@ -107,6 +107,7 @@
         align-items: stretch;
         position: relative;
         margin: 2rem 4rem;
+        margin-left: 0;
 
         img {
             position: absolute;
@@ -118,8 +119,9 @@
         .right {
             height: 100%;
             min-width: 300px;
-            max-width: 576px;
+            max-width: 676px;
             padding: 150px 0;
+            margin-right: 70px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -144,6 +146,11 @@
                     padding: 4em;
                     height: max-content;
                     background-color: #fff;
+
+                    .text-36 {
+                        margin-top: 2em;
+                        padding-left: 3rem;
+                    }
 
                     p {
                         margin-top: 2em;
@@ -172,8 +179,10 @@
                     margin-top: var(--col-gap);
                     border-radius: 0px;
                     background-color: #4C02A9;
+                    padding: 1rem;
 
                     a {
+                        font-size: 1.25em;
                         color: #fff;
                         border-top: 1px solid transparent;
                     }
@@ -216,6 +225,14 @@
 
         .m-r {
             margin-right: 70px;
+        }
+
+        .section-2.m-r {
+            padding-right: var(--m-l);
+        }
+
+        .short-info {
+            margin-right: var(--m-l);
         }
 
         .Big-container {

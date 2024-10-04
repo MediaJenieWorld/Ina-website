@@ -22,11 +22,11 @@
     }
 
     .m-l {
-        margin-left: 255px;
+        margin-left: 225px;
     }
 
     .m-r {
-        margin-right: 141px;
+        margin-right: 181px;
     }
 
     .m-t {
@@ -184,6 +184,10 @@
 
         .m-r {
             margin-right: 70px;
+        }
+
+        .section-2 {
+            margin-right: var(--m-l);
         }
 
         .Big_Image_Card {

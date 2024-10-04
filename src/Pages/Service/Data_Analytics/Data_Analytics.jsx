@@ -11,7 +11,7 @@ const Data_Analytics_Page = () => {
             <div className=" m-l m-r   nav-path text-28">
                 <a style={{ color: "#090909", marginRight: ".25rem" }} href="#">  Services & Capabilities</a>{" > "}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Capability</a>{" > "}
-                <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Machine Learning (ML)</a>
+                <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#"> Quantum Machine Learning (ML)</a>
             </div>
             <div className="m-l m-r m-t m-b section-2">
                 <h2 className="text-48 text-600">
@@ -20,9 +20,11 @@ const Data_Analytics_Page = () => {
             </div>
             <div className="hero-image">
                 <ImageComp height={600} width={"100%"} src={"/Service/image.png"} />
-                <div className="m-l m-r  overlay-text">
-                    <h4 className="text-36 text-500">
-                        Our team specializes in delivering cutting-edge data visualization solutions meticulously tailored to meet the unique needs of our clients. With our expertise and industry-leading technology, we empower businesses to unlock the full potential of their data, gaining a competitive edge in the market.    </h4>
+                <div className="img-blue-layer">
+                    <div className="m-l m-r  overlay-text">
+                        <h4 className="text-36 text-500">
+                            Our team specializes in delivering cutting-edge data visualization solutions meticulously tailored to meet the unique needs of our clients. With our expertise and industry-leading technology, we empower businesses to unlock the full potential of their data, gaining a competitive edge in the market.    </h4>
+                    </div>
                 </div>
             </div>
             <CardsSection />

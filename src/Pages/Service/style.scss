@@ -85,7 +85,7 @@
                     background-color: #fff;
 
                     p {
-                        margin-top: 2em;
+                        margin-top: 2vmax;
                     }
 
                     .des {
@@ -106,6 +106,7 @@
 
                     a {
                         color: #fff;
+                        padding: 0.625rem 5rem;
                         border-top: 1px solid transparent;
                     }
 
@@ -120,12 +121,29 @@
                 }
             }
         }
+
+        button.btn-shadow {
+            &:hover {
+                background-color: #000000;
+                color: var(--know-btn-text-hover-color);
+
+                a {
+                    color: var(--know-btn-text-hover-color);
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width:1441px) {
     .Service {
         font-size: 16px;
+
+        .Big-container .right {
+            .des {
+                font-size: 1.75vmax;
+            }
+        }
     }
 }
 
@@ -147,6 +165,18 @@
 
         .m-r {
             margin-right: 70px;
+        }
+
+        .Big-container {
+            font-size: 8px;
+
+            img {
+                object-fit: cover;
+            }
+
+            .des {
+                font-size: 2vmax;
+            }
         }
 
     }

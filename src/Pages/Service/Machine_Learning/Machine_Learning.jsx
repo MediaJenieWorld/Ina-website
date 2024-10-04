@@ -49,7 +49,7 @@ const Machine_Learning_Page = () => {
                     <div className="card">
                         <div className="all">
                             <div className="text-wrapper">
-                                <p className="text-32 text-500 des">
+                                <p className="text-32 text-500">
                                     We are committed to growing and learning together with our partners and clients. We work closely with our partners to understand their unique needs and develop tailored solutions that meet those needs. By collaborating with us, you can take advantage of our expertise in Quantum Machine Learning (QML) and the latest advancements in machine learning to take your capabilities to the next level.
                                 </p>
                                 <p className='text-28 text-400'>
