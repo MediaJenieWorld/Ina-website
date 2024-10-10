@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css"
 
-
 const Header = lazy(() => import("./Components/Header/Header"));
 const INA_Footer = lazy(() => import("./Components/Footer/Footer"));
 const Ina_Landing_Page = lazy(() => import("./Pages/Landing/Ina"));
@@ -14,7 +13,9 @@ const Machine_Learning_Page = lazy(() => import("./Pages/Service/Machine_Learnin
 const AI_ML_Page = lazy(() => import("./Pages/Service/AI-ML/AI_ML"));
 const Data_Analytics_Page = lazy(() => import("./Pages/Service/Data_Analytics/Data_Analytics"));
 const Knowledge_Graph_Page = lazy(() => import("./Pages/Service/Knowledge_Graph/Knowledge_Graph"));
-
+const AboutPage = lazy(() => import("./Pages/About/About"));
+const Contract_VehiclesPage = lazy(() => import("./Pages/Contract_Vehicles/Contract_Vehicles"))
+const Clients_Page = lazy(() => import("./Pages/Clients/Clients"))
 
 const App = () => {
 
@@ -31,8 +32,9 @@ const App = () => {
           <Route path="/services/adanced-data-analytics" element={<Data_Analytics_Page />} />
           <Route path="/services/ai-ml" element={<AI_ML_Page />} />
           <Route path="/services/knowledge_graph" element={<Knowledge_Graph_Page />} />
-
-
+          <Route path="/home/about" element={<AboutPage />} />
+          <Route path="/home/contract_vehicles" element={<Contract_VehiclesPage />} />
+          <Route path="/home/clientele" element={<Clients_Page />} />
           <Route path="/card" element={<CardsPage />} />
           <Route path="*" element={<Ina_Landing_Page />} />
         </Routes>

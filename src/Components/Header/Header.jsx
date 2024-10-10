@@ -6,11 +6,11 @@ import ScrollToTop from "../ScrollTop";
 const menuItems = [
   {
     title: "Clients",
-    url: "/#",
+    url: "/home/clientele",
   },
   {
     title: "Contract Vehicles",
-    url: "/#",
+    url: "/home/contract_vehicles",
   },
   {
     title: "Services & Capabilities",
@@ -45,7 +45,7 @@ const menuItems = [
   },
   {
     title: "About Us",
-    url: "/#",
+    url: "/home/about",
   },
   {
     title: "Contact",
@@ -61,16 +61,15 @@ const desktop_menuItems = [
   },
   {
     title: "Clients",
-    url: "/#",
+    url: "/home/clientele",
   },
   {
     title: "Contract Vehicles",
-    url: "/#",
+    url: "/home/contract_vehicles",
   },
-
   {
     title: "About Us",
-    url: "/#",
+    url: "/home/about",
   },
   {
     title: "Contact",

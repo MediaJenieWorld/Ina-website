@@ -1,0 +1,249 @@
+.Contract_Vehicles {
+    font-size: 16px;
+    padding: 0;
+    --m-l: 255px;
+    --m-r: 141px;
+    --collab-m-x: 12.5em;
+    --collab-gap: 6.25em;
+
+    .cover-page {
+        h1 {
+            padding-left: 255px;
+        }
+
+    }
+
+    .nav-path {
+        padding-top: 53px;
+    }
+
+    .light-color {
+        color: #9747FF;
+    }
+
+    .dark-color {
+        color: #4C02A9;
+    }
+
+    .m-l {
+        margin-left: 255px;
+    }
+
+    .m-r {
+        margin-right: 141px;
+    }
+
+    .m-t {
+        margin-top: 50px;
+    }
+
+    .m-b {
+        margin-bottom: 128px;
+    }
+
+
+
+    .section-2 {
+        .text-600 {
+            margin-bottom: 70px;
+        }
+
+        pre {
+            color: #000000;
+        }
+    }
+
+    .collab {
+        background-color: #000;
+        margin: 100px 0;
+        padding: 0 var(--collab-m-x);
+        display: grid;
+        gap: var(--collab-gap);
+        grid-template-columns: repeat(auto-fill, minmax(331px, 1fr));
+
+        .card {
+            padding: 106px 50px 100px 50px;
+            background-color: #fff;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            // width: 700px;
+            gap: 24px;
+
+            button {
+                border-color: transparent;
+                color: #fff;
+                border-radius: 5px;
+                padding: 8px 16px;
+                background-color: #4C02A9;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1450px) {
+    .Contract_Vehicles {
+        font-size: 16px;
+
+        --m-l: 255px;
+        --m-r: 141px;
+
+        .m-l {
+            margin-left: 255px;
+        }
+
+        .m-r {
+            margin-right: 141px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Contract_Vehicles {
+        font-size: 14px;
+
+        --m-l: 170px;
+        --m-r: 70px;
+
+        .cover-page h1 {
+            padding-left: var(--m-l);
+        }
+
+        .m-l {
+            margin-left: 170px;
+        }
+
+        .m-r {
+            margin-right: 70px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1240px) {
+    .Contract_Vehicles {
+        font-size: 12px;
+        --m-l: 80px;
+        --m-r: 50px;
+        --collab-m-x: 6.25em;
+        --collab-gap: 5.25em;
+
+        .m-l {
+            margin-left: 120px;
+        }
+
+        .m-r {
+            margin-right: 50px;
+        }
+
+        .collab .right-side img {
+            height: auto;
+            width: 23vmax;
+            object-fit: contain;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 968px) {
+    .Contract_Vehicles {
+        --m-l: 90px;
+        --m-r: 30px;
+
+        .m-l {
+            margin-left: 90px;
+        }
+
+        .m-r {
+            margin-right: 30px;
+        }
+
+        .collab .card {
+            margin-right: var(--m-r);
+            padding-left: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .Contract_Vehicles {
+        font-size: 10px;
+        --m-l: 40px;
+        --m-r: 40px;
+
+        .m-l {
+            margin-left: 40px;
+        }
+
+        .m-r {
+            margin-right: 40px;
+        }
+
+        .section-2 {
+            margin-bottom: 60px;
+        }
+
+        .collab {
+            padding: 50px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .right-side img {
+                width: 240px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Contract_Vehicles {
+        font-size: 8px;
+        --m-l: 20px;
+        --m-r: 20px;
+
+        .cover-page {
+            position: relative;
+
+            .text-60 {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                backdrop-filter: blur(4px);
+                text-align: center;
+                padding: 20px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+            }
+        }
+
+        .m-l {
+            margin-left: 20px;
+        }
+
+        .m-r {
+            margin-right: 20px;
+        }
+
+        .collab .card {
+            padding: var(--m-l);
+        }
+
+    }
+}
