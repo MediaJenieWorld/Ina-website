@@ -17,6 +17,10 @@ const menuItems = [
     url: "/services",
     links: [
       {
+        label: "Capabilities",
+        href: "/home/capabilities"
+      },
+      {
         label: "Quantum Sensing",
         href: "/services/quantum_sensing",
       },

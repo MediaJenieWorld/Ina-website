@@ -16,6 +16,7 @@ const Knowledge_Graph_Page = lazy(() => import("./Pages/Service/Knowledge_Graph/
 const AboutPage = lazy(() => import("./Pages/About/About"));
 const Contract_VehiclesPage = lazy(() => import("./Pages/Contract_Vehicles/Contract_Vehicles"))
 const Clients_Page = lazy(() => import("./Pages/Clients/Clients"))
+const Capabilities_Page = lazy(() => import("./Pages/Capabilities/Capabilities"))
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/home/about" element={<AboutPage />} />
           <Route path="/home/contract_vehicles" element={<Contract_VehiclesPage />} />
           <Route path="/home/clientele" element={<Clients_Page />} />
+          <Route path="/home/capabilities" element={<Capabilities_Page />} />
           <Route path="/card" element={<CardsPage />} />
           <Route path="*" element={<Ina_Landing_Page />} />
         </Routes>

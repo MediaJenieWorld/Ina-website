@@ -8,7 +8,7 @@ const Quantum_Literacy_Page = () => {
     return (
         <div className='Quantum_Literacy'>
             <CoverPageImage label='Quantum Literacy' src={"/assets/Ina/card (3).webp"} />
-            <div className=" m-l m-r   nav-path text-28">
+            <div className=" m-l m-r nav-path text-28">
                 <a style={{ color: "#090909", marginRight: ".25rem" }} href="#">  Services & Capabilities</a>{" > "}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Capability</a>{" > "}
                 <a style={{ color: "#090909", marginLeft: ".25rem" }} href="#">Quantum Literacy</a>
